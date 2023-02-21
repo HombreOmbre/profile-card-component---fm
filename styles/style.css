@@ -37,11 +37,7 @@ img {
 }
 
 .profile_card_component {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
+    max-width: 350px;
     border-radius: 20px;
     background: #fff;
 }
@@ -55,7 +51,8 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+    margin-bottom: 25px;
 }
 
 h2 {
@@ -87,4 +84,34 @@ p {
     border: 6px solid #fff;
     outline: none;
     margin: calc(-125px / 2) auto 0;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: var(--neutral-dk-gray);
+}
+
+.bottom_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.main_txt {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+@media (max-width: 350px) {
+    .profile_card_component {
+        width: 90%;
+    }
 }
